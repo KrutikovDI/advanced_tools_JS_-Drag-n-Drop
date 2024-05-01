@@ -1,0 +1,106 @@
+body {
+    background-color: rgb(24, 123, 159);
+    display: flex;
+    padding: 7px;
+    justify-content: space-between;
+}
+
+.colomn {
+    background-color: rgb(196, 196, 196);
+    width: 32%;
+    height: 100%;
+    border: 1px solid rgb(196, 196, 196);
+    border-radius: 3px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    padding: 5px;    
+}
+
+.card-conteiner, .card-conteiner-textarea {
+    display: block;
+    font-weight: normal;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 3px;
+    margin-bottom: 7px;
+    position: relative;
+}
+
+.card-conteiner:hover {
+    background-color: #e7e7e7;
+    cursor: pointer;
+    border: 1px solid #e7e7e7;
+  }
+
+.card-delete {
+    display: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgb(181, 181, 181);
+    background-color: rgb(181, 181, 181);
+    border-radius: 3px;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.card-navigation {
+    cursor: pointer;
+    width: fit-content;
+    content: "\E951";
+}
+
+.card-add-conteiner {
+    /* width: fit-content; */
+    display: flex;
+    font-weight: normal;
+    align-items: center;
+}
+
+.card-add {
+    color: rgb(127, 127, 127);
+    cursor: pointer;
+    width: fit-content;
+    display: flex;
+    font-weight: normal;
+    align-items: center;
+}
+
+/* .add-conteiner {
+    display: flex;
+    font-weight: normal;
+    align-items: center;
+} */
+
+.add {
+    background-color: rgb(52, 198, 30);
+    color: white;
+    border-color: rgb(52, 198, 30);
+    border-radius: 3px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.card-textarea {
+    border: none;
+    width: calc(100% - 5px);
+    resize: none;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    min-height: 40px;
+    height: 100%;
+    outline:    none;
+}
+
+.close {
+    cursor: pointer;
+}
+
+.dragged {
+    position: absolute;
+    z-index: 999;
+    transform: rotate(3deg);
+    width: calc(32% - 12px);
+}
